@@ -16,13 +16,13 @@ This demo uses synthetic records only. It does not connect to bank or accounting
 
 ## Run locally
 
-Serve the `public/` directory with any static HTTP server. Example:
+Serve the repository root with any static HTTP server. Example:
 
 ```text
-python3 -m http.server 8000 -d public
+python3 -m http.server 8000
 ```
 
-Then open `http://127.0.0.1:8000/`.
+Then open `http://127.0.0.1:8000/`. The staged repository keeps the four app files at root so the same tree can later be served directly by GitHub Pages.
 
 ## Queue rules
 

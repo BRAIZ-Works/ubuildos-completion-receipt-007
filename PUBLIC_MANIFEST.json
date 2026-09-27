@@ -6,9 +6,9 @@
       "sha256": "f746e4288b0403959e812b2154f4be65ac8939e2146768226bd13dd0ebfe8ee7"
     },
     {
-      "bytes": 1525,
+      "bytes": 1629,
       "path": "README.md",
-      "sha256": "cf78e04718b0660c4fcdb151dc3e2f9a2ca97f5d63da164d2f8d7959980eae7a"
+      "sha256": "cdcb6e61839f2b7f3c58fe550ff80ff6602ef6aa23e9944d5772693dacde074b"
     },
     {
       "bytes": 3992,
@@ -31,6 +31,7 @@
       "sha256": "97329002e98264cf7305de87268aa66c6bb2db2a9418fa72040cb7f76d3a6432"
     }
   ],
+  "projection_note": "Product HTML/CSS/JS bytes are unchanged from the Fresh-IQA-passed subject; README is repository-root deployment guidance for the derived release projection.",
   "projection_state": "PRIVATE_STAGING_ONLY",
   "release": "UBuildOS Day 06 / Invoice Follow-Up Queue",
   "schema_version": "1.0.0",
