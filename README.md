@@ -50,3 +50,9 @@ The product release subject and the Day-06 LinkedIn distribution subject each pa
 ## Security / contact
 
 For ordinary non-sensitive defects, use this repository's GitHub issue workflow. For security-sensitive reports, do **not** place secrets or exploit details in a public issue; use the repository/organization private GitHub security/contact route when available. See [SECURITY_CONTACT.md](SECURITY_CONTACT.md).
+
+## Day 06 public distribution
+
+LinkedIn publication: https://lnkd.in/p/e4EwmP7R
+
+This URL is the owner-supplied live publication receipt for the independently qualified Day-06 distribution subject. The current execution environment could not anonymously resolve the LinkedIn short URL, so this record binds the exact publication URL without claiming an independent content-level LinkedIn fetch.

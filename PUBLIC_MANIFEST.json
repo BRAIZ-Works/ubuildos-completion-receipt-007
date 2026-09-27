@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.1.0",
+  "schema_version": "1.2.0",
   "release": "UBuildOS Day 06 / Invoice Follow-Up Queue",
-  "projection_state": "PUBLIC_PRE_SOCIAL_CLOSEOUT",
+  "projection_state": "PUBLIC_SOCIAL_RELEASE_RECORDED",
   "repository": "https://github.com/BRAIZ-Works/ubuildos-completion-receipt-007",
   "live_build": "https://braiz-works.github.io/ubuildos-completion-receipt-007/",
   "source_subject": {
@@ -15,7 +15,7 @@
     "bytes": 179849,
     "sha256": "1272ddc8dda5de7e832d23ab4c8e6eac07f50437b197e0b9aeba33ee18b613d5",
     "fresh_iqa": "PASS",
-    "live_social_publication": "HELD_UNTIL_NON_SOCIAL_CLOSEOUT"
+    "live_social_publication": "https://lnkd.in/p/e4EwmP7R"
   },
   "files": [
     {
@@ -40,8 +40,8 @@
     },
     {
       "path": "README.md",
-      "bytes": 2488,
-      "sha256": "b973ec502878220f2f90113881712501d796c282d58925c7acc5ab4a150ff3aa"
+      "bytes": 2884,
+      "sha256": "49762ad04d9f07a08b865bb959d433928bbe0c3e834aa81e666aaea00da49494"
     },
     {
       "path": "RECOVERY.md",
@@ -97,6 +97,6 @@
   "notes": [
     "HTML/CSS/JS runtime bytes are unchanged from the product-qualified public projection.",
     "Private producer/Fresh-IQA evidence is intentionally excluded from the public tree.",
-    "Exact LinkedIn live URL is intentionally not asserted before publication."
+    "The LinkedIn URL is owner-supplied publication evidence; anonymous content fetch was unavailable in the closeout runtime."
   ]
 }
