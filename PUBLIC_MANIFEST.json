@@ -1,0 +1,42 @@
+{
+  "files": [
+    {
+      "bytes": 604,
+      "path": "LIMITATIONS.md",
+      "sha256": "f746e4288b0403959e812b2154f4be65ac8939e2146768226bd13dd0ebfe8ee7"
+    },
+    {
+      "bytes": 1525,
+      "path": "README.md",
+      "sha256": "cf78e04718b0660c4fcdb151dc3e2f9a2ca97f5d63da164d2f8d7959980eae7a"
+    },
+    {
+      "bytes": 3992,
+      "path": "app.js",
+      "sha256": "0101f3453982f252b90f86537b43b92d148ab28d0d55910ed5f686c7497630eb"
+    },
+    {
+      "bytes": 4837,
+      "path": "index.html",
+      "sha256": "1a03a1bb939d2e9982cb1ee6c2c2cce7bcc7ac1fbfceceafdced80845ef13f29"
+    },
+    {
+      "bytes": 2779,
+      "path": "logic.js",
+      "sha256": "ceb49a265cabc58daa7bfaf5869ac0a663c8261deaa77fc9bc2a5baa74ee1640"
+    },
+    {
+      "bytes": 3388,
+      "path": "styles.css",
+      "sha256": "97329002e98264cf7305de87268aa66c6bb2db2a9418fa72040cb7f76d3a6432"
+    }
+  ],
+  "projection_state": "PRIVATE_STAGING_ONLY",
+  "release": "UBuildOS Day 06 / Invoice Follow-Up Queue",
+  "schema_version": "1.0.0",
+  "source_subject": {
+    "bytes": 1205463,
+    "name": "DAY06_PRODUCT_RELEASE_CANDIDATE_v1.0.1.zip",
+    "sha256": "7f61c75334dd732755356ebd7a7fdff4a05c6293ad8a815095d74ce2c19277f9"
+  }
+}

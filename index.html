@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Invoice Follow-Up Queue™ — Day 06</title>
+  <meta name="description" content="A public-safe demo for prioritizing manual invoice follow-up using transparent, deterministic rules.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="skip" href="#queue">Skip to queue</a>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">UBuildOS · Day 06 · Workflow discipline</p>
+      <h1>Invoice Follow-Up Queue™</h1>
+      <p class="lede">Prioritize manual invoice follow-up with visible aging, priority, reasons, and human override—without touching money, accounts, or customer messaging.</p>
+    </div>
+    <div class="demo-badge" role="note">Synthetic demo data only</div>
+  </header>
+
+  <main>
+    <section class="boundary" aria-labelledby="boundary-title">
+      <h2 id="boundary-title">What this does—and does not do</h2>
+      <div class="boundary-grid">
+        <div>
+          <h3>Does</h3>
+          <ul>
+            <li>Compute invoice aging from a fixed demo date.</li>
+            <li>Assign transparent follow-up priority.</li>
+            <li>Show the reason for every computed priority.</li>
+            <li>Allow a human override with a required reason.</li>
+            <li>Export the current queue as CSV.</li>
+          </ul>
+        </div>
+        <div>
+          <h3>Does not</h3>
+          <ul>
+            <li>Connect to banks, payment rails, or accounting accounts.</li>
+            <li>Collect money or send customer messages.</li>
+            <li>Predict default, credit risk, collectability, or legal outcomes.</li>
+            <li>Use real customer or private financial data.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="rules" aria-labelledby="rules-title">
+      <h2 id="rules-title">Visible queue logic</h2>
+      <p>Demo date: <strong id="asOfLabel"></strong>. Missing or invalid required dates fail closed to <strong>REVIEW</strong>.</p>
+      <ol>
+        <li><strong>CRITICAL</strong>: 31+ days overdue.</li>
+        <li><strong>HIGH</strong>: 15–30 days overdue.</li>
+        <li><strong>MEDIUM</strong>: 1–14 days overdue.</li>
+        <li><strong>WATCH</strong>: due within 7 days.</li>
+        <li><strong>LOW</strong>: due later than 7 days.</li>
+        <li><strong>REVIEW</strong>: missing/invalid due date or unresolved input.</li>
+      </ol>
+    </section>
+
+    <section id="queue" class="queue-section" aria-labelledby="queue-title">
+      <div class="section-head">
+        <div>
+          <h2 id="queue-title">Follow-up queue</h2>
+          <p id="queueSummary" aria-live="polite"></p>
+        </div>
+        <div class="actions">
+          <button id="resetBtn" type="button" class="secondary">Reset demo</button>
+          <button id="exportBtn" type="button">Export CSV</button>
+        </div>
+      </div>
+      <div id="queueCards" class="queue-cards"></div>
+    </section>
+
+    <section class="trace" aria-labelledby="trace-title">
+      <h2 id="trace-title">Why manual override stays visible</h2>
+      <p>The original computed priority is preserved. An override changes the effective queue position only after a human supplies a reason, so the decision remains inspectable.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Public-safe workflow demonstration. Synthetic records. No automated collections or financial advice.</p>
+  </footer>
+
+  <dialog id="overrideDialog" aria-labelledby="overrideTitle">
+    <form method="dialog" id="overrideForm">
+      <h2 id="overrideTitle">Manual override</h2>
+      <p id="overrideInvoiceLabel"></p>
+      <input type="hidden" id="overrideId">
+      <label for="overridePriority">Effective priority</label>
+      <select id="overridePriority" required>
+        <option value="CRITICAL">CRITICAL</option>
+        <option value="HIGH">HIGH</option>
+        <option value="MEDIUM">MEDIUM</option>
+        <option value="WATCH">WATCH</option>
+        <option value="LOW">LOW</option>
+        <option value="REVIEW">REVIEW</option>
+      </select>
+      <label for="overrideReason">Reason for override</label>
+      <textarea id="overrideReason" rows="4" minlength="3" required placeholder="Example: Customer confirmed payment is already in transit."></textarea>
+      <p id="overrideError" class="error" role="alert"></p>
+      <div class="dialog-actions">
+        <button type="button" class="secondary" id="cancelOverride">Cancel</button>
+        <button type="button" class="secondary" id="removeOverride">Remove override</button>
+        <button type="submit" value="save">Save override</button>
+      </div>
+    </form>
+  </dialog>
+
+  <script src="logic.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
