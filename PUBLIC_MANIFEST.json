@@ -1,43 +1,102 @@
 {
+  "schema_version": "1.1.0",
+  "release": "UBuildOS Day 06 / Invoice Follow-Up Queue",
+  "projection_state": "PUBLIC_PRE_SOCIAL_CLOSEOUT",
+  "repository": "https://github.com/BRAIZ-Works/ubuildos-completion-receipt-007",
+  "live_build": "https://braiz-works.github.io/ubuildos-completion-receipt-007/",
+  "source_subject": {
+    "name": "DAY06_PRODUCT_RELEASE_CANDIDATE_v1.0.1.zip",
+    "bytes": 1205463,
+    "sha256": "7f61c75334dd732755356ebd7a7fdff4a05c6293ad8a815095d74ce2c19277f9",
+    "fresh_iqa": "PASS"
+  },
+  "distribution_subject": {
+    "name": "DAY06_DISTRIBUTION_CANDIDATE_v1.0.1.zip",
+    "bytes": 179849,
+    "sha256": "1272ddc8dda5de7e832d23ab4c8e6eac07f50437b197e0b9aeba33ee18b613d5",
+    "fresh_iqa": "PASS",
+    "live_social_publication": "HELD_UNTIL_NON_SOCIAL_CLOSEOUT"
+  },
   "files": [
     {
-      "bytes": 604,
+      "path": "AI_REVIEWER_REPRODUCIBILITY.md",
+      "bytes": 708,
+      "sha256": "6350ebcd0edadf9ccde558ae562ac75b2f52027be878fe198f3e184688704bf3"
+    },
+    {
       "path": "LIMITATIONS.md",
+      "bytes": 604,
       "sha256": "f746e4288b0403959e812b2154f4be65ac8939e2146768226bd13dd0ebfe8ee7"
     },
     {
-      "bytes": 1629,
-      "path": "README.md",
-      "sha256": "cdcb6e61839f2b7f3c58fe550ff80ff6602ef6aa23e9944d5772693dacde074b"
+      "path": "METHODOLOGY.md",
+      "bytes": 653,
+      "sha256": "76073ba6f0a7322c9084dbb91350a42e78e8b66161c2ef979bebc2d7fd5726f1"
     },
     {
-      "bytes": 3992,
+      "path": "PRIVACY.md",
+      "bytes": 522,
+      "sha256": "b8732e626afa2148d003759ee5e44e1c1d3915ad9d5a1970e1e6ad863e2809c6"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2488,
+      "sha256": "b973ec502878220f2f90113881712501d796c282d58925c7acc5ab4a150ff3aa"
+    },
+    {
+      "path": "RECOVERY.md",
+      "bytes": 547,
+      "sha256": "cb79499beae9a46620c573a5acca4081c1bbd4c5d16e0dc2aed43c063e447263"
+    },
+    {
+      "path": "RIGHTS_AND_USE.md",
+      "bytes": 339,
+      "sha256": "cf0c39be715e10f66ac9f4520baaa5eef5056d4912473f83357d4843690504fd"
+    },
+    {
+      "path": "SECURITY.md",
+      "bytes": 819,
+      "sha256": "7bf791c3d4c73e1b5763ebc1bf77d7a7b3f8f3c09697d6c654e62749c7647095"
+    },
+    {
+      "path": "SECURITY_CONTACT.md",
+      "bytes": 414,
+      "sha256": "298e5f83ef002472f276d0f5113f0f3e68cbe852ca434649c829eacee6b34cbe"
+    },
+    {
+      "path": "START_HERE.md",
+      "bytes": 634,
+      "sha256": "01a5dad7eac77bcd6a61115db8602fcd937900af7f0939259a4a79c60209c2ab"
+    },
+    {
+      "path": "VERIFICATION_SUMMARY.md",
+      "bytes": 771,
+      "sha256": "761d7d42320ed396352b51151bff5cab3c642bfddf4de78696af8d36f7ca9fdc"
+    },
+    {
       "path": "app.js",
+      "bytes": 3992,
       "sha256": "0101f3453982f252b90f86537b43b92d148ab28d0d55910ed5f686c7497630eb"
     },
     {
-      "bytes": 4837,
       "path": "index.html",
+      "bytes": 4837,
       "sha256": "1a03a1bb939d2e9982cb1ee6c2c2cce7bcc7ac1fbfceceafdced80845ef13f29"
     },
     {
-      "bytes": 2779,
       "path": "logic.js",
+      "bytes": 2779,
       "sha256": "ceb49a265cabc58daa7bfaf5869ac0a663c8261deaa77fc9bc2a5baa74ee1640"
     },
     {
-      "bytes": 3388,
       "path": "styles.css",
+      "bytes": 3388,
       "sha256": "97329002e98264cf7305de87268aa66c6bb2db2a9418fa72040cb7f76d3a6432"
     }
   ],
-  "projection_note": "Product HTML/CSS/JS bytes are unchanged from the Fresh-IQA-passed subject; README is repository-root deployment guidance for the derived release projection.",
-  "projection_state": "PRIVATE_STAGING_ONLY",
-  "release": "UBuildOS Day 06 / Invoice Follow-Up Queue",
-  "schema_version": "1.0.0",
-  "source_subject": {
-    "bytes": 1205463,
-    "name": "DAY06_PRODUCT_RELEASE_CANDIDATE_v1.0.1.zip",
-    "sha256": "7f61c75334dd732755356ebd7a7fdff4a05c6293ad8a815095d74ce2c19277f9"
-  }
+  "notes": [
+    "HTML/CSS/JS runtime bytes are unchanged from the product-qualified public projection.",
+    "Private producer/Fresh-IQA evidence is intentionally excluded from the public tree.",
+    "Exact LinkedIn live URL is intentionally not asserted before publication."
+  ]
 }
